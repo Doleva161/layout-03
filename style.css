@@ -62,6 +62,46 @@ aside > :last-child,
 /*
 	Nakóduj stránku podle obrázku zadani-ukolu.jpg.
 	Rozložení stránky se mění v breakpointech:
-	- 640px
-	- 1000px
-*/
+	- 640px*/
+@media (min-width: 640px){
+  .obsah {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+    }
+  
+    .reklama1 {
+      margin-bottom: 20px;
+    }
+   }
+  
+    /* 1000px*/
+    @media (min-width: 1000px){
+      .kontejner {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto auto;
+      }
+      .obsah {
+        display: flex;
+        flex-direction: column;
+        
+       }
+      
+       .reklama1 {
+        margin-bottom: 0px;
+        margin-right: 20px;
+       
+       }
+       .reklamy{
+        display: flex;
+        flex-direction: row;
+        flex:1 1 50%
+        
+       }}
+
+
+
+
+
+    
